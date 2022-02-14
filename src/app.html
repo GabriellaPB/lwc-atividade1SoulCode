@@ -1,0 +1,52 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+
+
+			<h1 class="slds-text-heading_large">
+				Dados do Cliente
+			</h1>
+			<p>Código: {cod}</p>
+			<p>Nome: {name}</p>
+			<p>Telefone: {phone}</p>
+			<p>E-mail: {email}</p>
+			<p>Classificação: {rating}</p>
+
+
+		</div>
+		<lightning-button variant="brand" label="Alterar" title="Trocar Dados" onclick={alterar}
+			class="slds-m-left_x-small">
+		</lightning-button>
+
+		<div>
+			<h1 class="slds-text-heading_large">
+				Qual é o Pokemon?
+			</h1>
+			<img src={img} onclick={handleClick} >
+
+		</div>
+
+		<div class="divMusic">
+			<h1 class="slds-text-heading_large hMusic">
+				Top 5 Melhores Musicas
+			</h1>
+			<template for:each={musicas} for:item="music">
+				<p class="pMuci" key={music.cod}>
+					Nome: {music.nome}, <br/>
+					Artista: {music.artista},<br/>
+					Album: {music.album}
+				</p>
+			</template>
+		</div>
+
+
+
+		<template for:each={oportunidades} for:item="opp">
+			<div key={opp.id}>
+				<c-oportunidade name={opp.name} conta={opp.conta} amount={opp.amount} date={opp.date}>
+				</c-oportunidade>
+			</div>
+		</template>
+
+	</lightning-card>
+</template>

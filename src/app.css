@@ -1,0 +1,21 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+
+.hMusic {
+    color: white;
+    text-align: center;
+}
+.pMuci{
+    color: white;
+    margin-top: 20px;
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.divMusic{
+    margin-top: 20px;   
+    background-color: #504d4dc2;
+    ;
+}
